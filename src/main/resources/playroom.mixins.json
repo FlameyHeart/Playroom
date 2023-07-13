@@ -1,0 +1,10 @@
+{
+	"required": true,
+	"package": "io.github.flameyheart.playroom.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "playroom",
+	"version": "${version}",
+	"name": "Playroom",
+	"description": "The ultimate mod that does things",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/playroom/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.flameyheart.playroom.Playroom"
+		],
+		"client": [
+			"io.github.flameyheart.playroom.PlayroomClient"
+		],
+		"fabric-datagen": [
+			"io.github.flameyheart.playroom.PlayroomDataGenerator"
+		]
+	},
+	"mixins": [
+		"playroom.mixins.json",
+		{
+			"config": "playroom.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
